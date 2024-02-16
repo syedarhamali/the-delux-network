@@ -11,7 +11,10 @@ const Logo = ({ src, alt, width, height }) => {
 const NavLink = ({ href, children }) => {
   return (
     <div className="relative sm:ml-5 md:ml-5 lg:ml-5 xl:ml-2 2xl:ml-1">
-      <a className="flex items-center gap-3 text-base font-semibold leading-6 text-white" href={href}>
+      <a
+        className="flex items-center gap-3 text-base font-semibold leading-6 text-white"
+        href={href}
+      >
         {children}
       </a>
     </div>
@@ -35,7 +38,11 @@ const HamburgerMenuButton = ({ onClick }) => {
         aria-hidden="true"
         className="w-8 h-8"
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
       </svg>
     </button>
   );
@@ -45,10 +52,10 @@ const Header = ({ logoSrc, navLinks, onMenuClick }) => {
   return (
     <header className="fixed right-0 left-0 top-0 z-[100] bg-transparent">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 ">
-        <div className="fixed inset-x-0 w-full h-20 py-6 bg-transparent" />
-        <div className="flex items-center justify-between pt-6 pb-3 md:justify-start">
+        <div className="fixed inset-x-0 w-full h-20 py-2 bg-transparent" />
+        <div className="flex items-center justify-between pt-1 pb-3 md:justify-start">
           <div className="z-10 flex md:flex-1">
-            <Logo src={logoSrc} alt={'Logo'} width={134} height={32} />
+            <Logo src={logoSrc} alt={"Logo"} width={134} height={32} />
           </div>
           <div className="z-10 flex lg:hidden">
             <HamburgerMenuButton onClick={onMenuClick} />
