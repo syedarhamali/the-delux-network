@@ -5,8 +5,8 @@ const Hero = () => {
         className="h-full bg-cover bg-center py-24"
         style={{ backgroundImage: "url('/images/banner.jpg')" }}
       >
-        <div className="flex items-center gap-4 px-4 mx-auto max-w-7xl sm:px-6 ">
-          <div className="flex-1 flex-col space-y-5 px-4">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-6 px-4 mx-auto max-w-7xl sm:px-6 ">
+          <div className="flex-1 flex-col space-y-5 px-4 pb-8 lg:pb-0">
             <div>
               <p className="text-lg text-primary-purple font-bold">CRYPTO PACK</p>
               <h1 className="text-5xl font-bold">
@@ -36,8 +36,8 @@ const Hero = () => {
                 </div>
             </div>
           </div>
-          <div className="flex-1">
-            <img src="/images/women-with-vr.png" width={546} height={507} />
+          <div className="flex-1 ">
+            <img src="/images/women-with-vr.png" className="mx-auto" width={546} height={507} />
           </div>
         </div>
       </div>
