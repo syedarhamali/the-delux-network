@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Logo = ({ src, alt, width, height }) => {
   return (
@@ -49,8 +49,26 @@ const HamburgerMenuButton = ({ onClick }) => {
 };
 
 const Header = ({ logoSrc, navLinks, onMenuClick }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5 * window.innerHeight / 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed right-0 left-0 top-0 z-[100] bg-transparent">
+    <header className={`fixed right-0 left-0 top-0 z-[100] ${scrolled ? 'bg-[#1E2028]/90' : 'bg-transparent'}`}>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 ">
         <div className="fixed inset-x-0 w-full h-20 py-2 bg-transparent" />
         <div className="flex items-center justify-between pt-1 pb-3 md:justify-start">
