@@ -1,8 +1,8 @@
 'use client'
 
-import Header from "@/app/components/header";
-import Hero from "@/app/components/hero";
-import NFTLogoSection from "@/app/components/nftLogoSection";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import NFTLogoSection from "@/components/nftLogoSection";
 
 const Home = () => {
   const logoSrc =
@@ -10,9 +10,15 @@ const Home = () => {
 
   const navLinks = [
     { href: "/", text: "Home" },
-    { href: "/features", text: "Features" },
-    { href: "/resources", text: "Resources" },
-    { href: "/pricing", text: "Pricing" },
+    { href: "/about", text: "About" },
+    { href: "/token", text: "Token" },
+    { href: "/tokenomics", text: "Tokenomics" },
+    { href: "/road-map", text: "Road Map" },
+    { href: "/team", text: "Team" },
+    { href: "/white-paper", text: "White Paper" },
+    { href: "/faq", text: "FAQ" },
+    { href: "/contact-us", text: "Contact Us" },
+    { href: "/shop", text: "Shop" },
   ];
 
   const handleMenuClick = () => {
