@@ -22,7 +22,7 @@ const NFTLogoSection = () => {
                   width={70}
                   alt={`Image ${item.id}`}
                 />
-                <p>{item.title}</p>
+                <p className="text-white">{item.title}</p>
               </div>
             </div>
           ))}

@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="flex-1 flex-col space-y-5 px-4 pb-8 lg:pb-0">
             <div>
               <p className="text-lg text-primary-purple font-bold">CRYPTO PACK</p>
-              <h1 className="text-5xl font-bold leading-snug tracking-tight">
+              <h1 className="text-5xl text-white font-bold leading-snug tracking-tight">
                 Create, sell and collect digital items.
               </h1>
             </div>
@@ -23,15 +23,15 @@ const Hero = () => {
             </button>
             <div className="flex justify-between items-center pt-4 w-10/12">
                 <div className="max-w-max">
-                    <h2 className="text-2xl font-semibold">94215</h2>
+                    <h2 className="text-2xl font-semibold text-white">94215</h2>
                     <p>Collectibles</p>
                 </div>
                 <div className="max-w-max">
-                    <h2 className="text-2xl font-semibold">27k</h2>
+                    <h2 className="text-2xl font-semibold text-white">27k</h2>
                     <p>Auctions</p>
                 </div>
                 <div className="max-w-max">
-                    <h2 className="text-2xl font-semibold">4k</h2>
+                    <h2 className="text-2xl font-semibold text-white">4k</h2>
                     <p>Artist</p>
                 </div>
             </div>
