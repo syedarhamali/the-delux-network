@@ -115,7 +115,7 @@ const ProductsCarousel = () => {
 
   return (
     <Slider {...settings}>
-      {data && data.map((item) => <ProductsCarouselCard  item={item} />)}
+      {data && data.map((item , index) => <ProductsCarouselCard key={index} item={item} />)}
     </Slider>
   );
 };
