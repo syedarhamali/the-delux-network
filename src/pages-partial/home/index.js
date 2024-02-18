@@ -1,8 +1,9 @@
 'use client'
 
+import Products from "@/components/new-items";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import NFTLogoSection from "@/components/nftLogoSection";
+import NFTLogoSection from "@/components/nft-logo-section";
 
 const Home = () => {
   const logoSrc =
@@ -35,6 +36,7 @@ const Home = () => {
       />
       <Hero />
       <NFTLogoSection />
+      <Products />
     </div>
   );
 };

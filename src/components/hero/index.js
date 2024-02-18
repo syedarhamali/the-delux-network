@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="h-full">
       <div
-        className="h-[120vh] bg-cover bg-center py-20"
+        className="lg:h-[120vh] h-full bg-cover bg-center py-20"
         style={{ backgroundImage: "url('/images/banner.jpg')" }}
       >
         <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-6 px-4 mx-auto max-w-7xl sm:px-6 ">
