@@ -2,9 +2,9 @@ import { nftLogoData } from "@/utils/nftlogo";
 
 const NFTLogoSection = () => {
   return (
-    <section className="bg-[#212428]">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 py-24">
-        <div className="flex lg:flex-row flex-col justify-between lg:gap-0 gap-10">
+    <section className="bg-[#212428] z-50">
+      <div className="px-4 py-24 mx-auto max-w-7xl sm:px-6">
+        <div className="flex flex-col justify-between gap-10 lg:flex-row lg:gap-0">
           {nftLogoData.map((item) => (
             <div
               key={item.id}
