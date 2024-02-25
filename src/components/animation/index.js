@@ -26,7 +26,7 @@ const ParticleComponent = () => {
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={{
-                    fullScreen: false,
+                    fullScreen: true,
                     background: {
                         color: {
                             value: "transparent",

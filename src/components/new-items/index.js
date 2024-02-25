@@ -1,14 +1,14 @@
-const { default: ProductsCarousel } = require("../ui/carousel");
+const { default: NewItemsCarousel } = require("../ui/carousel/new-items");
 
-const Products = () => {
+const NewItems = () => {
   return (
-    <section className="bg-[#212428] h-screen relative">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 flex flex-col gap-6">
-        <p className="text-white text-3xl font-bold">New Items</p>
-        <ProductsCarousel />
+    <section className="bg-[#212428] py-24 relative">
+      <div className="flex flex-col gap-6 px-4 mx-auto max-w-[1440px] sm:px-6">
+        <p className="text-3xl font-bold text-white">New Items</p>
+        <NewItemsCarousel />
       </div>
     </section>
   );
 };
 
-export default Products;
+export default NewItems;

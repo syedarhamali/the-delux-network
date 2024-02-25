@@ -1,23 +1,23 @@
 import React from "react";
 
-const ProductsCarouselCard = ({ item }) => {
+const NewItemsCard = ({ item }) => {
   return (
     <div
-      className={`bg-[#282B2F] ${
-        item === 1 ? "mx-0 max-w-max" : "mx-8"
-      }  p-6 rounded-xl border border-gray-400 relative transition duration-300 ease-in-out`}
+      className={`bg-[#282B2F] mx-4 max-w-max p-6 rounded-xl border border-gray-400 relative transition duration-300 ease-in-out`}
       style={{
         border: "solid 0.0625rem rgb(66 63 63 / 90%)",
         boxShadow: "1px 1px 8px 1px rgb(0 0 0 / 30%)",
       }}
     >
-      <div className="relative transition ease-in-out duration-700 transform hover:scale-105">
+      <div className="relative w-full h-full transition duration-700 ease-in-out transform hover:scale-105">
         <img
-          className="rounded-lg w-full h-full lg:max-w-max"
+          className="block h-auto rounded-lg lg:max-w-max"
           src="/anim-5.webp"
+          height={450}
+          width={450}
           alt=""
         />
-        <div className="absolute left-1/2 top-1/2 w-12 h-12 bg-purple-500 rounded-full flex justify-center items-center transform -translate-x-1/2 -translate-y-1/2 text-white text-center text-lg">
+        <div className="absolute flex items-center justify-center w-12 h-12 text-lg text-center text-white transform -translate-x-1/2 -translate-y-1/2 bg-purple-500 rounded-full left-1/2 top-1/2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -43,8 +43,8 @@ const ProductsCarouselCard = ({ item }) => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-between mt-5 p-0">
-        <p className="font-extrabold text-base mb-1 text-gray-600">Cig Swaag</p>
+      <div className="flex items-center justify-between p-0 mt-5">
+        <p className="mb-1 text-base font-extrabold text-gray-600">Cig Swaag</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -61,13 +61,13 @@ const ProductsCarouselCard = ({ item }) => {
         </svg>
       </div>
       <div className="">
-        <h5 className="text-sm font-semibold block text-gray-500">
+        <h5 className="block text-sm font-semibold text-gray-500">
           0.08 ETH <strong className="text-white"> 1/20</strong>
         </h5>
       </div>
       <div className="flex items-center justify-between">
         <span className="text-sm font-bold text-purple-600">Place a bid</span>
-        <div className="text-gray-400 flex gap-1">
+        <div className="flex gap-1 text-gray-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -83,4 +83,4 @@ const ProductsCarouselCard = ({ item }) => {
   );
 };
 
-export default ProductsCarouselCard;
+export default NewItemsCard;
