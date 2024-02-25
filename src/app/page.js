@@ -1,4 +1,4 @@
-import HomePartial from "@/pages-partial/home";
+import HomePartial from '@/components/home'
 
 export default function Home() {
   return <HomePartial />;
