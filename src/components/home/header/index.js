@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from "react";
 
 const Logo = ({ src, alt, width, height }) => {
@@ -78,7 +80,7 @@ const Header = ({ logoSrc, navLinks, onMenuClick }) => {
           <div className="z-10 flex lg:hidden">
             <HamburgerMenuButton onClick={onMenuClick} />
           </div>
-          <div className="relative hidden lg:flex" data-headlessui-state="">
+          <div className="relative hidden lg:flex">
             <div className="hidden lg:flex md:gap-x-6 lg:gap-x-6">
               {navLinks.map((link, index) => (
                 <NavLink key={index} href={link.href}>

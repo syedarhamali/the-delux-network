@@ -1,10 +1,11 @@
 'use client'
 
-import Hero from "@/components/hero";
-import NFTLogoSection from "@/components/nft-logo-section";
-import NewItems from "@/components/new-items";
-import About from "./about";
-import Header from "@/pages-partial/home/header";
+import Hero from "@/components/home/hero";
+import NFTLogoSection from "@/components/home/nft-logo-section";
+import NewItems from "@/components/home/new-items";
+import Header from "@/components/home/header";
+import About from "@/components/home/about";
+import TokenSection from "./token";
 
 const Home = () => {
   const logoSrc =
@@ -37,8 +38,9 @@ const Home = () => {
       />
       <Hero />
       <About />
-      <NFTLogoSection />
-      <NewItems />
+      {/* <NFTLogoSection /> */}
+      {/* <NewItems /> */}
+      <TokenSection />
     </div>
   );
 };

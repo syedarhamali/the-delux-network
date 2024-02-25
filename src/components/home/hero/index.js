@@ -1,4 +1,4 @@
-import ParticleComponent from "../animation";
+import ParticleComponent from "../../ui/animation";
 
 const Hero = () => {
   return (

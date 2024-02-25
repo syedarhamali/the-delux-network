@@ -1,4 +1,4 @@
-const { default: HotCollectionsCarousel } = require("../ui/carousel/hot-collections");
+const { default: HotCollectionsCarousel } = require("../../ui/carousel/hot-collections");
 
 const HotCollections = () => {
   return (
