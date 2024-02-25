@@ -28,7 +28,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="!bg-white">
       <Header
         logoSrc={logoSrc}
         navLinks={navLinks}
