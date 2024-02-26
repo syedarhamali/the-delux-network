@@ -16,12 +16,12 @@ const Hero = () => {
               </p> */}
               <div className="inline-flex items-center my-3 text-base border rounded-full border-primary-purple text-gray-70 0 bg-white/10 sm:text-base lg:text-sm hover:text-blue-600">
                 <a className="z-10" href="/">
-                  <span className="pr-3 sm:px-3 py-0.5 text-black bg-white font-medium leading-5 tracking-wide rounded-full">
+                  <span className="pr-3 lg:text-base text-sm  sm:px-3 py-0.5 text-black bg-white font-medium leading-5 tracking-wide rounded-full">
                     thedeluxnetwork.com
                   </span>
                 </a>
                 <div className="z-10 flex items-center mx-2">
-                  <span className="ml-2 font-medium text-white sm:ml-4">
+                  <span className="text-sm font-medium text-white lg:text-base">
                     About the Network
                   </span>
                   <svg
