@@ -1,6 +1,6 @@
 const TokenSection = () => {
   return (
-    <section className="bg-[#212428] py-24 relative">
+    <section className="bg-[#212428] py-24 relative" id="token">
       <div className="flex flex-col gap-6 px-4 mx-auto max-w-[1440px] sm:px-6">
         <h1 className="text-5xl font-bold text-center text-primary-purple">
           Token Structure
