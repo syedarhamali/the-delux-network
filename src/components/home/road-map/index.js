@@ -1,4 +1,4 @@
-import RoadMapCard from "./card";
+import RoadMapCards from "./card";
 
 const RoadMapSection = () => {
   return (
@@ -15,9 +15,7 @@ const RoadMapSection = () => {
           experience. Stay tuned for a sneak peek into the future of our
           offerings
         </p>
-        <div>
-          <RoadMapCard />
-        </div>
+          <RoadMapCards />
       </div>
     </section>
   );

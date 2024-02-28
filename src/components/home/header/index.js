@@ -75,7 +75,7 @@ const Header = ({ logoSrc, navLinks, onMenuClick }) => {
         <div className="fixed inset-x-0 w-full h-20 py-2 bg-transparent" />
         <div className="flex items-center justify-between pt-1 pb-3 md:justify-start">
           <div className="z-10 flex md:flex-1">
-            <Logo src={logoSrc} alt={"Logo"} width={134} height={32} />
+            <Logo src={logoSrc} alt={"Logo"} width={100} height={20} />
           </div>
           <div className="z-10 flex lg:hidden">
             <HamburgerMenuButton onClick={onMenuClick} />

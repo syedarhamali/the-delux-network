@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <img
               className="h-2/5"
-              src="https://thedeluxnetwork.com/wp-content/uploads/2023/07/The_Delux_Network_Final.png"
+              src="/images/logo.webp"
               alt="Company name"
             />
             <div className="grid grid-cols-2 gap-8 mt-16 xl:col-span-2 xl:mt-0">
