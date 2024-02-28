@@ -7,6 +7,7 @@ import TokenSection from "./token";
 import TokenomicSection from "./tokenomics";
 import RoadMapSection from "./road-map";
 import FAQSection from "./faq";
+import Footer from "./footer";
 
 const Home = () => {
   const logoSrc =
@@ -41,10 +42,11 @@ const Home = () => {
       <About />
       {/* <NFTLogoSection /> */}
       {/* <NewItems /> */}
-      <TokenSection />
-      <TokenomicSection />
+      {/* <TokenSection /> */}
       <RoadMapSection />
+      <TokenomicSection />
       <FAQSection />
+      <Footer />
     </div>
   );
 };
