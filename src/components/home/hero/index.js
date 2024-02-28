@@ -11,9 +11,6 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-6 px-4 mx-auto lg:flex-row lg:gap-4 max-w-[1440px] sm:px-6 ">
           <div className="flex-col flex-1 px-4 pb-8 space-y-5 lg:pb-0">
             <div>
-              {/* <p className="text-lg text-primary-purple">
-                CRYPTO PACK
-              </p> */}
               <div className="inline-flex items-center my-3 text-base border rounded-full border-primary-purple text-gray-70 0 bg-white/10 sm:text-base lg:text-sm hover:text-blue-600">
                 <a className="z-10" href="/">
                   <span className="pr-3 lg:text-base text-sm  sm:px-3 py-0.5 text-black bg-white font-medium leading-5 tracking-wide rounded-full">
@@ -59,26 +56,16 @@ const Hero = () => {
             <button className="px-10 py-1 text-sm font-semibold text-white rounded-2xl bg-primary-purple hover:shadow-md hover:shadow-primary-purple">
               Explore
             </button>
-            {/* <div className="flex items-center justify-between w-10/12 pt-4">
-              <div className="max-w-max">
-                <h2 className="text-4xl font-semibold text-white">94215</h2>
-                <p>Collectibles</p>
-              </div>
-              <div className="max-w-max">
-                <h2 className="text-4xl font-semibold text-white">27k</h2>
-                <p>Auctions</p>
-              </div>
-              <div className="max-w-max">
-                <h2 className="text-4xl font-semibold text-white">4k</h2>
-                <p>NFT Artist</p>
-              </div>
-            </div> */}
           </div>
-          <div className="flex-1 ">
+          <div className="flex-1">
+            <div className="flex items-center w-full h-[90vh]">
             <img
-              src="/images/women-with-vr.png"
-              className="w-full h-full mx-auto"
+              src="/images/hero.webp"
+              className="mx-auto"
+              height={600}
+              width={500}
             />
+            </div>
           </div>
         </div>
       </div>

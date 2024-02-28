@@ -11,7 +11,7 @@ import Footer from "./footer";
 
 const Home = () => {
   const logoSrc =
-    "https://thedeluxnetwork.com/wp-content/uploads/2023/07/The_Delux_Network_Final.png";
+    "/images/logo.webp";
 
   const navLinks = [
     { href: "/", text: "Home" },
@@ -23,7 +23,6 @@ const Home = () => {
     { href: "/white-paper", text: "White Paper" },
     { href: "/#faq", text: "FAQ" },
     { href: "/contact-us", text: "Contact Us" },
-    { href: "/shop", text: "Shop" },
   ];
 
   const handleMenuClick = () => {
