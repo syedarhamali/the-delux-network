@@ -39,6 +39,7 @@ const PieChart = () => {
           },
         },
       ],
+      colors: ['#8364E2','#383A3E' ]
     },
   };
 

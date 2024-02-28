@@ -1,3 +1,5 @@
+import RoadMapCard from "./card";
+
 const RoadMapSection = () => {
   return (
     <section className="bg-[#212428] relative py-24 h-full" id="road-map">
@@ -13,7 +15,9 @@ const RoadMapSection = () => {
           experience. Stay tuned for a sneak peek into the future of our
           offerings
         </p>
-        <img src="https://thedeluxnetwork.com/wp-content/uploads/2023/10/eeeeee-1536x806.png.webp" />
+        <div>
+          <RoadMapCard />
+        </div>
       </div>
     </section>
   );
