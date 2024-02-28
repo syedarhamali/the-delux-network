@@ -8,6 +8,7 @@ import TokenomicSection from "./tokenomics";
 import RoadMapSection from "./road-map";
 import FAQSection from "./faq";
 import Footer from "./footer";
+import TeamSection from "./team";
 
 const Home = () => {
   const logoSrc =
@@ -19,7 +20,7 @@ const Home = () => {
     { href: "/#token", text: "Token" },
     { href: "/#tokenomics", text: "Tokenomics" },
     { href: "/#road-map", text: "Road Map" },
-    { href: "/team", text: "Team" },
+    { href: "/#team", text: "Team" },
     { href: "/white-paper", text: "White Paper" },
     { href: "/#faq", text: "FAQ" },
     { href: "/contact-us", text: "Contact Us" },
@@ -44,6 +45,7 @@ const Home = () => {
       {/* <TokenSection /> */}
       <RoadMapSection />
       <TokenomicSection />
+      <TeamSection />
       <FAQSection />
       <Footer />
     </div>
