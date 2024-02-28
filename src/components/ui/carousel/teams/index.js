@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { twMerge } from "tailwind-merge";
-import NewItemsCard from "./cards";
+import TeamCard from "./cards";
 
 const mainSettings = {
   dots: false,
@@ -19,7 +19,7 @@ function NextArrow({ currentSlide, slideCount, cardsToShow, ...props }) {
     <button
       {...props}
       className={twMerge(
-        "absolute inline-flex items-center hover:opacity-65 justify-center right-0 border border-gray-200 rounded-full bottom-36 w-12 h-12"
+        "absolute inline-flex items-center hover:opacity-65 justify-center left-16 border border-gray-200 rounded-full bottom-0 w-12 h-12"
       )}
       style={{
         border: "solid 0.0625rem rgb(66 63 63 / 90%)",
@@ -49,7 +49,7 @@ function PrevArrow({ currentSlide, slideCount, ...props }) {
     <button
       {...props}
       className={twMerge(
-        "absolute inline-flex hover:opacity-65 items-center justify-center left-0 border border-gray-200 rounded-full z-20 bottom-36 w-12 h-12 "
+        "absolute inline-flex hover:opacity-65 items-center justify-center left-0 border border-gray-200 rounded-full z-20 bottom-0 w-12 h-12 "
       )}
       style={{
         border: "solid 0.0625rem rgb(66 63 63 / 90%)",
@@ -74,15 +74,13 @@ function PrevArrow({ currentSlide, slideCount, ...props }) {
   );
 }
 
-const NewItems = () => {
+const TeamsCarousel = ({ data }) => {
   const cardsToShow = {
     desktop: 4,
     bigTablet: 4,
     tablet: 1.97,
-    mobile: 2,
+    mobile: 1,
   };
-
-  const data = [1, 2, 3, 4, 5, 6];
 
   const settings = {
     ...mainSettings,
@@ -116,9 +114,9 @@ const NewItems = () => {
 
   return (
     <Slider {...settings}>
-      {data && data.map((item , index) => <NewItemsCard key={index} item={item} />)}
+      {data && data.map((item, index) => <TeamCard key={index} item={item} />)}
     </Slider>
   );
 };
 
-export default NewItems;
+export default TeamsCarousel;
