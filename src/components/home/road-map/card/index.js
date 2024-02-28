@@ -35,10 +35,10 @@ const RoadMapCard = () => {
   return (
     <div>
       <div className="grid grid-cols-1 gap-6 mx-auto mt-8 lg:h-auto lg:mx-0 lg:max-w-none lg:grid-cols-5">
-        {roadMaps.map((item) => {
+        {roadMaps.map((item , key) => {
           const { year, quarter, description } = item;
           return (
-            <div style={{ opacity: 1, transform: "none" }}>
+            <div key={key} style={{ opacity: 1, transform: "none" }}>
               <article className="relative px-8 overflow-hidden bg-purple-900 isolate rounded-2xl">
                 <div className="flex items-center justify-center pt-6">
                   <div className=" max-w-max shrink-0">
