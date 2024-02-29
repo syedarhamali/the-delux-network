@@ -31,7 +31,7 @@ export default function Footer() {
       </h2>
       <div className="px-6 pt-8 pb-8 mx-auto max-w-7xl sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <img className="h-2/5" src="/images/logo.webp" alt="Company name" />
+          <img className="hidden h-32 lg:block" src="/images/logo.webp" alt="Company name" />
           <div className="grid grid-cols-2 gap-8 mt-6 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
