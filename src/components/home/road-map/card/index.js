@@ -130,12 +130,12 @@ TO 2300
 const RoadMapCards = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 gap-6 mx-auto mt-8 lg:h-auto lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-6 mx-auto mt-8 md:grid-cols-2 lg:h-auto lg:mx-0 lg:max-w-none lg:grid-cols-5">
         {roadMaps.map((item, key) => {
           const { year, quarter, description } = item;
           return (
             <div key={key} style={{ opacity: 1, transform: "none" }}>
-              <article className="relative block h-full px-8 overflow-hidden bg-purple-900 isolate rounded-2xl">
+              <article className="relative block h-full px-8 overflow-hidden bg-purple-900 max-w-max md:max-w-md isolate rounded-2xl">
                 <div className="flex items-center justify-center pt-6">
                   <div className=" max-w-max shrink-0">
                     <p className="text-4xl font-extrabold">
