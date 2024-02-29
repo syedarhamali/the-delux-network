@@ -2,8 +2,6 @@
 
 import Hero from "@/components/home/hero";
 import Header from "@/components/home/header";
-import About from "@/components/home/about";
-import TokenSection from "./token";
 import TokenomicSection from "./tokenomics";
 import RoadMapSection from "./road-map";
 import FAQSection from "./faq";
@@ -23,7 +21,7 @@ const Home = () => {
     { href: "/#team", text: "Team" },
     { href: "/white-paper", text: "White Paper" },
     { href: "/#faq", text: "FAQ" },
-    { href: "/contact-us", text: "Contact Us" },
+    { href: "/#contact", text: "Contact Us" },
   ];
 
   const handleMenuClick = () => {
@@ -33,13 +31,14 @@ const Home = () => {
 
   return (
     <div>
+      {/* <Example /> */}
       <Header
         logoSrc={logoSrc}
         navLinks={navLinks}
         onMenuClick={handleMenuClick}
       />
       <Hero />
-      <About />
+      {/* <About /> */}
       {/* <NFTLogoSection /> */}
       {/* <NewItems /> */}
       {/* <TokenSection /> */}

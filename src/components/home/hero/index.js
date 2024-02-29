@@ -10,8 +10,8 @@ const Hero = () => {
         <ParticleComponent />
         <div className="flex flex-col items-center gap-6 px-4 mx-auto lg:flex-row lg:gap-4 max-w-[1440px] sm:px-6 ">
           <div className="flex-col flex-1 px-4 pb-8 space-y-5 lg:pb-0">
-            <div>
-              <div className="inline-flex items-center my-3 text-base border rounded-full border-primary-purple text-gray-70 0 bg-white/10 sm:text-base lg:text-sm hover:text-blue-600">
+            <div className="pt-5">
+              {/* <div className="inline-flex items-center my-3 text-base border rounded-full border-primary-purple text-gray-70 0 bg-white/10 sm:text-base lg:text-sm hover:text-blue-600">
                 <a className="z-10" href="/">
                   <span className="pr-3 lg:text-base text-sm  sm:px-3 py-0.5 text-black bg-white font-medium leading-5 tracking-wide rounded-full">
                     thedeluxnetwork.com
@@ -37,7 +37,7 @@ const Hero = () => {
                     />
                   </svg>
                 </div>
-              </div>
+              </div> */}
 
               <h1 className="text-2xl font-bold tracking-tight text-white uppercase lg:text-5xl ">
                 Discover the Power of XRP, Blockchain and Cryptocurrency

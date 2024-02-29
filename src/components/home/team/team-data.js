@@ -12,26 +12,6 @@ knowledge has made him a key influencer in the XRP community.
 contributing to the broader understanding of digital assets.`,
   },
   {
-    name: "Sadanand VGK",
-    designation: "Advisor to the Board",
-    imageUrl: "/images/team/Sada.webp",
-    description: `
-      With over 15+ years of dedicated experience in the video gaming
-      industry I have adeptly led, managed, and nurtured community
-      management and live operations teams across various platforms,
-      including PC, Mobile, and Web 3.0. My proficiency extends to diverse
-      revenue models, encompassing free-to-play, micro-transactions, and
-      subscription services, with a recent emphasis on Web 3.0 Gaming`,
-  },
-  {
-    name: "Lamar E",
-    designation: "Advisor to the Board",
-    imageUrl: "/images/team/Lamar.webp",
-    description: `
-        Former CTO of Cool Cats NFTs and is seasoned blockchain innovator
-        and mentor`,
-  },
-  {
     name: "Jonathan DiRusso",
     designation: "Head of Operations",
     imageUrl: "/images/team/Jonathan.webp",
@@ -44,6 +24,7 @@ contributing to the broader understanding of digital assets.`,
         community education make him a respected thought leader in the
         gaming and financial technology sectors`,
   },
+  
   {
     name: "Richard Meehan",
     designation: "Advisor to the Board",
@@ -53,5 +34,25 @@ contributing to the broader understanding of digital assets.`,
     board-level experience since 2016. His expertise is in accelerated
     growth and investment in IT and MedTech, FMCG (fast moving
     consumer goods & Real Estate.`,
+  },
+  {
+    name: "Lamar E",
+    designation: "Advisor to the Board",
+    imageUrl: "/images/team/Lamar.webp",
+    description: `
+        Former CTO of Cool Cats NFTs and is seasoned blockchain innovator
+        and mentor`,
+  },
+  {
+    name: "Sadanand VGK",
+    designation: "Advisor to the Board",
+    imageUrl: "/images/team/Sada.webp",
+    description: `
+      With over 15+ years of dedicated experience in the video gaming
+      industry I have adeptly led, managed, and nurtured community
+      management and live operations teams across various platforms,
+      including PC, Mobile, and Web 3.0. My proficiency extends to diverse
+      revenue models, encompassing free-to-play, micro-transactions, and
+      subscription services, with a recent emphasis on Web 3.0 Gaming`,
   },
 ];

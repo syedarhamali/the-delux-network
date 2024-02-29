@@ -10,7 +10,6 @@ const TeamSection = () => {
                 <h1 className="text-5xl font-bold text-center text-primary-purple">
                   Team
                 </h1>
-                {/* Description */}
                 <p className="text-lg font-light text-gray-700">
                   Meet The crew.
                 </p>
