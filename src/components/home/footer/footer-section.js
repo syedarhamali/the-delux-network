@@ -1,27 +1,23 @@
 export const navigation = {
     solutions: [
-      { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      { name: 'FAQ', href: '#' },
+      { name: 'More FAQs', href: '#' },
+      { name: 'Road Map', href: '#' },
+
     ],
     support: [
-      { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
+      { name: 'Contact Us', href: '#' },
+      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms Of service', href: '#' },
     ],
     company: [
       { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Team', href: '#' },
+      { name: 'Tokenomics', href: '#' },
     ],
     legal: [
-      { name: 'Claim', href: '#' },
-      { name: 'Privacy', href: '#' },
-      { name: 'Terms', href: '#' },
+      { name: 'Newsletter', href: '#' },
+      { name: 'Whitepaper', href: '#' },
     ],
     social: [
       {

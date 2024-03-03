@@ -16,7 +16,7 @@ const TeamCard = ({ item }) => {
           <div className="mb-2 font-light text-primary-purple">
             {designation}
           </div>
-          <div className="mb-2 font-light ">{description}</div>
+          <div className="mb-2 font-light text-white">{description}</div>
         </div>
       </div>
     </div>

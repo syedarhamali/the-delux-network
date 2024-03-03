@@ -7,7 +7,7 @@ const RoadMapSection = () => {
         <h1 className="text-5xl font-bold text-center text-primary-purple">
           Road Map
         </h1>
-        <p className="max-w-5xl mx-auto text-center">
+        <p className="max-w-5xl mx-auto text-center text-white">
           Explore our roadmap to glimpse the exciting journey ahead. This
           dynamic roadmap section offers insights into our upcoming milestones,
           features, and enhancements. We’re committed to transparently sharing
