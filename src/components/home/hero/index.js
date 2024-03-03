@@ -53,9 +53,9 @@ const Hero = () => {
               forge ahead to create lasting value in the next generation of
               digital assets.
             </p>
-            <button className="px-10 py-1 text-sm font-semibold text-white rounded-2xl bg-primary-purple hover:shadow-md hover:shadow-primary-purple">
+            {/* <button className="px-10 py-1 text-sm font-semibold text-white rounded-2xl bg-primary-purple hover:shadow-md hover:shadow-primary-purple">
               Explore
-            </button>
+            </button> */}
           </div>
           <div className="flex-1">
             <div className="flex items-center w-full h-[90vh]">

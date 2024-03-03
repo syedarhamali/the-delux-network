@@ -34,7 +34,7 @@ const FAQSection = () => {
         <h1 className="text-5xl font-bold text-center text-primary-purple">
           FAQ
         </h1>
-        <p className="max-w-5xl mx-auto text-center">
+        <p className="max-w-5xl mx-auto text-center text-white">
           Our FAQ section, is designed to provide you with quick and concise
           answers to the most common questions. We understand that you might
           have inquiries about our products/services, policies, and more. This

@@ -15,12 +15,12 @@ const Home = () => {
   const navLinks = [
     { href: "/", text: "Home" },
     { href: "/#about", text: "About" },
-    { href: "/#token", text: "Token" },
-    { href: "/#tokenomics", text: "Tokenomics" },
     { href: "/#road-map", text: "Road Map" },
+    { href: "/#tokenomics", text: "Tokenomics" },
     { href: "/#team", text: "Team" },
-    { href: "/white-paper", text: "White Paper" },
     { href: "/#faq", text: "FAQ" },
+    { href: "/#newsletter", text: "Newsletter" },
+    { href: "/docs/whitepaper.pdf", text: "Whitepaper" },
     { href: "/#contact", text: "Contact Us" },
   ];
 
@@ -31,17 +31,12 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Example /> */}
       <Header
         logoSrc={logoSrc}
         navLinks={navLinks}
         onMenuClick={handleMenuClick}
       />
       <Hero />
-      {/* <About /> */}
-      {/* <NFTLogoSection /> */}
-      {/* <NewItems /> */}
-      {/* <TokenSection /> */}
       <RoadMapSection />
       <TokenomicSection />
       <TeamSection />

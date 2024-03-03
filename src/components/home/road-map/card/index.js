@@ -138,7 +138,7 @@ const RoadMapCards = () => {
               <article className="relative block h-full px-8 overflow-hidden bg-purple-900 max-w-max md:max-w-md isolate rounded-2xl">
                 <div className="flex items-center justify-center pt-6">
                   <div className=" max-w-max shrink-0">
-                    <p className="text-4xl font-extrabold">
+                    <p className="text-4xl font-extrabold text-white">
                       {year} <span className="text-pink-400">{quarter}</span>
                     </p>
                   </div>
@@ -147,7 +147,7 @@ const RoadMapCards = () => {
                   <div className="flex flex-wrap items-center overflow-hidden text-base leading-normal text-white gap-y-1">
                     <div className="flex items-center gap-x-4">
                       <div
-                        className="flex text-center"
+                        className="flex text-center text-white"
                         dangerouslySetInnerHTML={{ __html: description }}
                       ></div>
                     </div>

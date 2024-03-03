@@ -9,7 +9,7 @@ const TokenomicSection = () => {
           Tokenomics
         </h1>
         <div className="flex justify-center w-full">
-          <img src="/images/tokenomics.webp" />
+          <img src="/images/tokenomics.webp" className="lg:h-[650px] lg:w-[1150px] w-full h-full" />
           {/* <div className="flex items-center gap-2">
             <PieChart />
             <TokenomicsTable />

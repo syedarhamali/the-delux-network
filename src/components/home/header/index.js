@@ -10,17 +10,22 @@ const Logo = ({ src, alt, width, height }) => {
 };
 
 const NavLink = ({ href, children , onClick }) => {
+  const shouldOpenInNewTab = href.startsWith("/docs");
+
   return (
     <div className="relative py-1 sm:ml-5 md:ml-5 lg:ml-5 xl:ml-2 2xl:ml-1" onClick={onClick}>
       <a
         className="flex items-center gap-3 text-sm font-semibold leading-6 text-white lg:text-base"
         href={href}
+        target={shouldOpenInNewTab ? "_blank" : "_self"}
+        rel={shouldOpenInNewTab ? "noopener noreferrer" : ""}
       >
         {children}
       </a>
     </div>
   );
 };
+
 
 const Header = ({ logoSrc, navLinks }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,9 +55,9 @@ const Header = ({ logoSrc, navLinks }) => {
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 ">
         <div className="fixed inset-x-0 w-full h-20 py-2 bg-transparent" />
-        <div className="flex items-center justify-between pt-1 pb-3 md:justify-start">
+        <div className="flex items-center justify-between pt-1 md:justify-start">
           <div className="z-10 flex md:flex-1">
-            <Logo src={logoSrc} alt={"Logo"} width={100} height={20} />
+            <Logo src={logoSrc} alt={"Logo"} width={120} height={30} />
           </div>
           <div className="z-10 flex md:hidden">
             <button
@@ -120,7 +125,7 @@ const Header = ({ logoSrc, navLinks }) => {
               <div className="absolute block md:hidden top-0 w-full max-w-sm p-6 rounded-lg shadow-md bg-[#212428]">
                 <div className="flex justify-between mb-4">
                   <div>
-                    <Logo src={logoSrc} alt={"Logo"} width={100} height={20} />
+                    <Logo src={logoSrc} alt={"Logo"} width={120} height={30} />
                   </div>
                   <div>
                     <button
