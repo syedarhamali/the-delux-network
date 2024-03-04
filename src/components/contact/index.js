@@ -6,10 +6,11 @@ import { useState } from "react";
 
 function Contact() {
   const { submitContactForm } = useHubspotForm();
-  const [email, setEmail] = useState('');
-  const [discordName, setDiscordName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [discordName, setDiscordName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [message, setMessage] = useState("");
+  const [showSuccess , setShowSuccess] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,9 +27,26 @@ function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    submitContactForm(email, discordName, fullName, message);
+    const response = await submitContactForm(
+      email,
+      discordName,
+      fullName,
+      message
+    );
+    if (response) {
+      setShowSuccess(true);
+      setTimeout(() => {
+        setShowSuccess(false);
+        setEmail("");
+        setDiscordName("");
+        setFullName("");
+        setMessage("");
+      }, 3000);
+    }
+
+    console.log("response", response);
   };
 
   return (
@@ -65,7 +83,7 @@ function Contact() {
                           stroke="#FFFFFF"
                         />
                       </svg>
-                      <span className="text-white text-lg">Contact us</span>
+                      <span className="text-lg text-white">Contact us</span>
                     </div>
                     <div className="w-4/5">
                       <h2 className="text-5xl leading-8 lg:leading-[60px] font-semibold -tracking-[0.02rem] text-white pb-5">
@@ -82,7 +100,7 @@ function Contact() {
                     </div>
                     <form onSubmit={handleSubmit}>
                       <div className="mt-12">
-                        <div className="flex xl:items-center flex-col xl:flex-row gap-4 pb-6">
+                        <div className="flex flex-col gap-4 pb-6 xl:items-center xl:flex-row">
                           <div className="w-full">
                             <div className="flex flex-col gap-1.5 w-full">
                               <label
@@ -138,7 +156,6 @@ function Contact() {
                               placeholder="Discord Name"
                               className="px-3.5 py-2.5 bg-white text-black border border-gray-200 rounded-lg ouline-none focus:outline-blue-500 placeholder:text-gray-400 placeholder:text-base "
                               defaultValue=""
-                              required
                               onChange={handleChange}
                               value={discordName}
                             />
@@ -164,7 +181,8 @@ function Contact() {
                           />
                         </div>
                       </div>
-                      <button className="w-full cursor-pointer bg-primary-purple rounded-lg shadow-xs py-3 px-5 text-center font-semibold text-base text-white">
+                      {showSuccess &&  <p className="px-1 py-2 text-green-700">Form submitted Successfully!</p> }
+                      <button className="w-full px-5 py-3 text-base font-semibold text-center text-white rounded-lg shadow-xs cursor-pointer bg-primary-purple">
                         Message
                       </button>
                     </form>
@@ -173,11 +191,11 @@ function Contact() {
               </div>
             </div>
             <div
-              className="mt-10 -mx-4 px-4 relative lg:mt-0"
+              className="relative px-4 mt-10 -mx-4 lg:mt-0"
               aria-hidden="true"
             >
               <img
-                className="relative mx-auto h-full rounded-lg overflow-hidden"
+                className="relative h-full mx-auto overflow-hidden rounded-lg"
                 src="/images/contact-hand.png"
                 alt=""
               />
