@@ -1,4 +1,4 @@
-import useHubspotForm from "@/hooks/email";
+import useHubspotForm from "@/hooks/hubspot";
 import { navigation } from "./footer-section";
 import { useState } from "react";
 
