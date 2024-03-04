@@ -1,3 +1,5 @@
+import { useRouter } from "next/navigation";
+
 const { Disclosure } = require("@headlessui/react");
 const faqs = [
   {
@@ -20,7 +22,6 @@ const faqs = [
     answer:
       "Blockchain technology enables true asset ownership, censorship resistance, and interoperability between different Metaverse environments. It ensures secure ownership of digital goods and facilitates the movement of value across platforms and networks.",
   },
- 
 ];
 
 function classNames(...classes) {
@@ -28,6 +29,7 @@ function classNames(...classes) {
 }
 
 const FAQSection = () => {
+  const router = useRouter()
   return (
     <section className="bg-[#212428] relative" id="faq">
       <div className="flex flex-col gap-6 px-4 mx-auto max-w-[1440px] sm:px-6">
@@ -50,9 +52,7 @@ const FAQSection = () => {
                 <div className={classNames(open ? "rounded-lg" : "", "p-2")}>
                   <dt className="text-lg">
                     <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-300">
-                      <span
-                        className= 'font-medium text-primary-purple'
-                      >
+                      <span className="font-medium text-primary-purple">
                         {faq.question}
                       </span>
                       <span className="flex items-center ml-6 h-7">
@@ -78,17 +78,16 @@ const FAQSection = () => {
                   </dt>
                   <Disclosure.Panel as="dd" className="pr-12 mt-2">
                     <p className="text-base text-gray-200">{faq.answer}</p>
-                    {/* {faq.nextLine &&
-                    faq.nextLine.map((line, idx) => (
-                      <p key={idx} className="py-2 text-base text-gray-200">
-                        {line}
-                      </p>
-                    ))} */}
                   </Disclosure.Panel>
                 </div>
               )}
             </Disclosure>
           ))}
+          <div className="w-full pt-4 text-center">
+            <button className="w-2/6 py-3 mx-auto border-none rounded-lg outline-none bg-primary-purple" onClick={() => router.push("/faq-2")}>
+              Show More
+            </button>
+          </div>
         </dl>
       </div>
     </section>
