@@ -27,9 +27,23 @@ const NavLink = ({ href, children , onClick }) => {
 };
 
 
-const Header = ({ logoSrc, navLinks }) => {
+const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const logoSrc =
+  "/images/logo.webp";
+
+const navLinks = [
+  { href: "/", text: "Home" },
+  { href: "/#about", text: "About" },
+  { href: "/#road-map", text: "Road Map" },
+  { href: "/#tokenomics", text: "Tokenomics" },
+  { href: "/#team", text: "Team" },
+  { href: "/#faq", text: "FAQ" },
+  { href: "/#newsletter", text: "Newsletter" },
+  { href: "/docs/whitepaper.pdf", text: "Whitepaper" },
+  { href: "/contact", text: "Contact Us" },
+];
 
   useEffect(() => {
     const handleScroll = () => {
