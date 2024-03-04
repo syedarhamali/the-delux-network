@@ -32,7 +32,7 @@ const useHubspotForm = () => {
     }
   };
 
-  const submitContactForm = async (email, phone, full_name, message) => {
+  const submitContactForm = async (email, discordName, full_name, message) => {
     try {
       const formResponse = await fetch(
         `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${contactFormId}`,
@@ -53,8 +53,8 @@ const useHubspotForm = () => {
                 value: email,
               },
               {
-                name: "phone",
-                value: phone,
+                name: "discord_name",
+                value: discordName,
               },
               {
                 name: "message",

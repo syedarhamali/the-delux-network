@@ -7,7 +7,7 @@ import { useState } from "react";
 function Contact() {
   const { submitContactForm } = useHubspotForm();
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [discordName, setDiscordName] = useState('');
   const [fullName, setFullName] = useState('');
   const [message, setMessage] = useState('');
 
@@ -16,7 +16,7 @@ function Contact() {
     const setters = {
       fullName: setFullName,
       email: setEmail,
-      phoneNumber: setPhone,
+      discordName: setDiscordName,
       message: setMessage,
     };
 
@@ -28,7 +28,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    submitContactForm(email, phone, fullName, message);
+    submitContactForm(email, discordName, fullName, message);
   };
 
   return (
@@ -127,20 +127,20 @@ function Contact() {
                         <div className="pb-6">
                           <div className="flex flex-col gap-1.5 w-full">
                             <label
-                              htmlFor="phoneNumber"
+                              htmlFor="discordName"
                               className="text-sm font-medium text-white"
                             >
-                              Phone Number
+                              Discord Name
                             </label>
                             <input
                               id="Phone Number"
-                              name="phoneNumber"
-                              placeholder="Phone Number"
+                              name="discordName"
+                              placeholder="Discord Name"
                               className="px-3.5 py-2.5 bg-white text-black border border-gray-200 rounded-lg ouline-none focus:outline-blue-500 placeholder:text-gray-400 placeholder:text-base "
                               defaultValue=""
                               required
                               onChange={handleChange}
-                              value={phone}
+                              value={discordName}
                             />
                           </div>
                         </div>

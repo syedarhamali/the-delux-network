@@ -1,5 +1,5 @@
-import FAQSecondaryPartial from '@/components/faq-secondary'
+import FAQSecondaryPartial from "@/components/faq-secondary";
 
-export default function FAQ() {
+export default function FAQSecondary() {
   return <FAQSecondaryPartial />;
 }
