@@ -6,6 +6,7 @@ import TokenomicSection from "./tokenomics";
 import RoadMapSection from "./road-map";
 import FAQSection from "./faq";
 import TeamSection from "./team";
+import Footer from "./footer";
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
       <TokenomicSection />
       <TeamSection />
       <FAQSection />
+      <Footer />
     </div>
   );
 };
