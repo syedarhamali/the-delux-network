@@ -58,7 +58,7 @@ const Hero = () => {
             </button> */}
           </div>
           <div className="flex-1">
-            <div className="flex items-center w-full h-[90vh]">
+            <div className="flex items-center w-full lg:h-[90vh] h-full">
             <img
               src="/images/hero.webp"
               className="mx-auto"
