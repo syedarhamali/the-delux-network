@@ -196,8 +196,8 @@ function Contact() {
             >
               <img
                 className="relative h-full mx-auto overflow-hidden rounded-lg"
-                src="/images/contact-hand.png"
-                alt=""
+                src="/images/Contact_Us.webp"
+                alt="contact-image"
               />
             </div>
           </div>
